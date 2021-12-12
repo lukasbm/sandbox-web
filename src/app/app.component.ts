@@ -5,7 +5,4 @@ import { Component } from "@angular/core";
 	templateUrl: "./app.component.html",
 	styleUrls: ["./app.component.css"],
 })
-export class AppComponent {
-	editorOptions = { theme: "vs-dark", language: "javascript" };
-	code: string = 'function x() {\nconsole.log("Hello world!");\n}';
-}
+export class AppComponent {}
