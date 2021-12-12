@@ -14,7 +14,14 @@ indent_style = tab
 tab_width = 4
 
 [*.html]
-max_line_length = off
+max_line_length = 300
+html_normalize_tag_names = true
+normalize_tag_names = true
+html_spaces_around_eq_in_pi_attribute = false
+spaces_around_eq_in_pi_attribute = false
+html_pi_attribute_style = on_single_line
+pi_attribute_style = on_single_line
+
 
 [*.md]
 max_line_length = off
