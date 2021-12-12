@@ -11,8 +11,8 @@ export class ApiService {
 
 	constructor(private http: HttpClient) {}
 
-	public getLanguages() {
-		return this.http.get(`${this.base}/getLanguages`);
+	public getLanguages(): Observable<string[]> {
+		return this.http.get<string[]>(`${this.base}/getLanguages`);
 	}
 
 	public executeCode(language: string, code: string): Observable<any> {
