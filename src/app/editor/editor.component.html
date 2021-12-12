@@ -1,3 +1,5 @@
-<main class="container--wide mx-auto">
-	<ngx-monaco-editor [options]="editorOptions"></ngx-monaco-editor>
+<main class="container--wide">
+	<ngx-monaco-editor [options]="editorOptions" [(ngModel)]="code"></ngx-monaco-editor>
+
+	<p>{{ code }}</p>
 </main>
